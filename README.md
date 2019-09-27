@@ -1,0 +1,1 @@
+# kiditrade-psql-sink
