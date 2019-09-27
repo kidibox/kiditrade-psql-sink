@@ -1,0 +1,17 @@
+[package]
+name = "kiditrade-psql-sink"
+version = "0.1.0"
+authors = ["Arnaud Rebts <arnaud.rebts@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+kafka = "0.8.0"
+log = "0.4.0"
+env_logger = "0.6.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+time-parse = "0.1.2"
+diesel = { version = "1.0.0", features = ["postgres", "chrono", "numeric"] }
+bigdecimal = { version = "0.0.14", features = ["serde"] }
